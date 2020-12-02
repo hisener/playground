@@ -1,6 +1,14 @@
-dist: bionic
 language: java
 sudo: false
 
 jdk:
   - oraclejdk11
+
+before_script:
+  - cat /etc/hosts
+
+jobs:
+  include:
+    - dist: xenial
+    - dist: bionic
+    - dist: focal
