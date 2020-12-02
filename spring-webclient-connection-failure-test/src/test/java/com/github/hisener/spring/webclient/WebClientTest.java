@@ -30,7 +30,7 @@ final class WebClientTest {
 
     @BeforeAll
     void beforeAll() {
-        StepVerifier.setDefaultTimeout(Duration.ofSeconds(5));
+        StepVerifier.setDefaultTimeout(Duration.ofSeconds(1));
     }
 
     @AfterAll

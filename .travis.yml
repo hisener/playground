@@ -1,6 +1,10 @@
 language: java
 sudo: false
 
+addons:
+  hosts:
+    - localhost
+
 jdk:
   - oraclejdk11
 
