@@ -1,3 +1,3 @@
 # Playground
 
-[![Build Status](https://travis-ci.org/hisener/playground.svg?branch=master)](https://travis-ci.org/hisener/playground)
+[![Build Status](https://travis-ci.com/hisener/playground.svg?branch=master)](https://travis-ci.com/hisener/playground)
