@@ -1,21 +1,9 @@
+dist: focal
 language: java
 sudo: false
-
-addons:
-  hosts:
-    - localhost
-
-jdk:
-  - oraclejdk11
 
 before_script:
   - cat /etc/hosts
   - ping -c 2 -t 5 localhost
   - ping -c 2 -t 5 127.0.0.1
   - ping -c 2 -t 5 127.0.1.1
-
-jobs:
-  include:
-    - dist: xenial
-    - dist: bionic
-    - dist: focal
