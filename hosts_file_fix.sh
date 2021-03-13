@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+set -x
 set -e -u -o pipefail
 
 function get_line_number() {
