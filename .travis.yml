@@ -2,12 +2,11 @@ dist: bionic
 language: java
 sudo: false
 
-addons:
-  hosts:
-    - localhost
-
 before_script:
   - cat /etc/hosts
   - ping -c 2 -t 5 localhost
   - ping -c 2 -t 5 127.0.0.1
   - ping -c 2 -t 5 127.0.1.1
+  - ./hosts_file_fix.sh "/etc/hosts"
+  - cat /etc/hosts
+  - ping -c 2 -t 5 localhost
