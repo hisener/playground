@@ -1,6 +1,5 @@
 dist: bionic
 language: java
-sudo: false
 
 before_script:
   - cat /etc/hosts
